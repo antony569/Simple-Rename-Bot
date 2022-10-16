@@ -10,7 +10,6 @@ class Bot(Client):
             bot_token=BOT_TOKEN,
             workers=100,
             plugins={"root": "main"},
-            sleep_threshold=5,
         )
     async def start(self):
        await super().start()
